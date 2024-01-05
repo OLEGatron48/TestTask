@@ -34,7 +34,6 @@ class Migrationagency extends Migration
             $table->char('Surname', 30);
             $table->char('Patronymic', 30);
             $table->char('Phone', 20);
-            $table->integer('EXP');
             $table->char('Adress', 100);
             $table->integer('TypeID');
             $table->integer('EntityID');
@@ -52,7 +51,7 @@ class Migrationagency extends Migration
             $table->char('Name', 30);
         });
 
-            Schema::create('Objects', function (Blueprint $table) {
+        Schema::create('Objects', function (Blueprint $table) {
             $table->integer('Id')->autoIncrement();
             $table->char('Picture', 100);
             $table->char('Name', 30);

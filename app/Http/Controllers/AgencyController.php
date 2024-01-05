@@ -88,7 +88,6 @@ class AgencyController extends Controller
             'Surname' => 'Петухов',
             'Patronymic' => 'Альвианович',
             'Phone' => '8(207)686-70-08',
-            'EXP' => 0,
             'Adress' => '683485, Брянская область, город Лотошино, пер. Гоголя, 58',
             'TypeID' => 1,
             'EntityID' => 1,
