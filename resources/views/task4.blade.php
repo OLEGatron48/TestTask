@@ -6,6 +6,6 @@
 <body>
     <b>Объекты связанные с клиентом № {{ $client }}: </b><br>
     @foreach($deals as $deal)
-        Объект № {{ $deal->ObjectID }}<br>
+        Объект № {{ $deal->Id }}<br>
     @endforeach
 </body>

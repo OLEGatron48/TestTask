@@ -4,5 +4,7 @@
     <meta charset="utf-8">
 </head>
 <body>
-    Добавлено
+    Кол-во дел до добавления дела: {{ $count_before }}<br>
+    Кол-во дел после добавления дела: {{ $count_after }}
 </body>
+

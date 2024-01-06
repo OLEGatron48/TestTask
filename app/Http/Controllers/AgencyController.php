@@ -77,8 +77,17 @@ class AgencyController extends Controller
             'ClientID'=>1,
             'StatusID'=>1
         ];
+
+        $count_before = AgencyDeals::count();
+
         AgencyDeals::create($deal);
-        return view('task7');
+
+        $count_after = AgencyDeals::count();
+
+        return view('task7', [
+            'count_before' => $count_before,
+            'count_after' => $count_after
+        ]);
     }
 
     public function createClient()
@@ -94,7 +103,15 @@ class AgencyController extends Controller
             'IndividualID' => 1
         ];
 
+        $count_before = Clients::count();
+
         Clients::create($client);
-        return view('task8');
+
+        $count_after = Clients::count();
+
+        return view('task8', [
+            'count_before' => $count_before,
+            'count_after' => $count_after
+        ]);
     }
 }

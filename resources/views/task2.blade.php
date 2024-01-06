@@ -4,8 +4,8 @@
     <meta charset="utf-8">
 </head>
 <body>
-    <b>Объекты связанные с объектом № {{ $object }}: </b><br>
+    <b>Дела связанные с объектом № {{ $object }}: </b><br>
     @foreach($deals as $deal)
-        Клиент № {{ $deal->ClientID }}<br>
+        Дело № {{ $deal->Id }}<br>
     @endforeach
 </body>
