@@ -9,7 +9,7 @@
     @foreach ($users as $user)
         <div class="user">
             <a href="#">
-                $user->name
+                {{ $user->id }}.{{ $user->name }}
             </a>
         </div>
     @endforeach
