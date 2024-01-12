@@ -8,7 +8,7 @@
 <body>
     @foreach ($users as $user)
         <div class="user">
-            <a href="#">
+            <a href='http://127.0.0.1:8000/user{{ $user->id }}'>
                 {{ $user->id }}.{{ $user->name }}
             </a>
         </div>
