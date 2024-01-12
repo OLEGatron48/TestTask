@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Auth\RegisterController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -25,3 +26,12 @@ Route::get('/task5', 'AgencyController@allDeals');
 Route::get('/task6', 'AgencyController@dealAndObjectsAndClints');
 Route::get('/task7', 'AgencyController@createDeal');
 Route::get('/task8', 'AgencyController@createClient');
+
+
+//Route::match(['get', 'post'], 'messanger/registr', [
+//    RegisterController::class, 'create'
+//]);
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
