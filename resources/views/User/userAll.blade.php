@@ -8,7 +8,7 @@
 <body>
     @foreach ($users as $user)
         <div class="user">
-            <a href="user__link">
+            <a href="#">
                 $user->name
             </a>
         </div>
