@@ -10,6 +10,7 @@ use App\Models\DealStatuses;
 use App\Models\TypeObjects;
 use App\Models\TypeClients;
 use App\Models\Clients;
+use App\Models\User;
 use App\Models\TypeSalesUsers;
 use Database\Factories\TypeClientsFactory;
 use Illuminate\Database\Seeder;
@@ -24,13 +25,14 @@ class DatabaseSeeder extends Seeder
 
     public function run()
     {
-        TypeObjects::factory(1)->create();
-        Objects::factory(3)->create();
-        DealStatuses::factory(1)->create();
-        TypeClients::factory(1)->create();
-        IndividualClients::factory(3)->create();
-        EntityClients::factory(3)->create();
-        Clients::factory(3)->create();
-        AgencyDeals::factory(3)->create();
+        User::factory(10)->create();
+        // TypeObjects::factory(1)->create();
+        // Objects::factory(3)->create();
+        // DealStatuses::factory(1)->create();
+        // TypeClients::factory(1)->create();
+        // IndividualClients::factory(3)->create();
+        // EntityClients::factory(3)->create();
+        // Clients::factory(3)->create();
+        // AgencyDeals::factory(3)->create();
     }
 }
